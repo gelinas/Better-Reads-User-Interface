@@ -178,6 +178,38 @@
     }
   }
 
+  .team-big-row {
+    margin: 30px 0px;
+    .flex(row, wrap, space-evenly, center);
+
+    .team-profile {
+      width: 150px;
+      padding: 5px;
+      text-align: center;
+      .flex(column, nowrap, space-between, center);
+
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      h4 {
+        font-size: 1.8rem;
+      }
+      @media @tablet {
+        width: 31%;
+        padding: 5px 1%;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+        @media @tablet {
+          max-width: 100%;
+          }
+        }
+    }
+  }
+
   // end team.html styles
 
   /* Unused section
