@@ -1,0 +1,1059 @@
+/**
+ * Lessmore
+ * {@link https://github.com/belyan/lessmore GitHub}
+ *
+ * @author Yuri Beliakov
+ * @version 1.0.3
+ * @license MIT
+ *
+ * @description
+ * The modern library of LESS mixins that implements cross-browser support for the CSS3 features and more.
+ *
+ * Modules:
+ *  - Animations
+ *  - Borders
+ *  - Box
+ *  - Color
+ *  - Flexible Box
+ *  - Fonts
+ *  - Gradients
+ *  - Grid
+ *  - Images
+ *  - Shapes
+ *  - Text
+ *  - Transforms
+ *  - Transitions
+ */
+/**
+ * Animations
+ * @module animations
+ * {@link http://www.w3.org/TR/css3-animations/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Animation
+ * {@link http://caniuse.com/#feat=animation Can I use}
+ *
+ * @example
+ * .animation(bounce 200ms);
+ * .animation(diagonal-slide 1s linear 10 reverse);
+ * .animation(shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both);
+ */
+/**
+ * Animation <Property>
+ *
+ * @example
+ * .animation-delay(100ms);
+ * .animation-direction(reverse);
+ * .animation-duration(5s);
+ * .animation-fill-mode(forwards);
+ * .animation-iteration-count(infinite);
+ * .animation-name(diagonal-slide);
+ * .animation-play-state(paused);
+ * .animation-timing-function(ease-out);
+ */
+/**
+ * Keyframes
+ *
+ * @example
+ * .keyframes(diagonal-slide; {
+ *     from { left: 0; top: 0; }
+ *       to { left: 100px; top: 100px; }
+ * });
+ * .keyframes(wobble; {
+ *       0% { left: 100px; }
+ *      40% { left: 150px; }
+ *      60% { left: 75px;  }
+ *     100% { left: 100px; }
+ * });
+ */
+/**
+ * Borders
+ * @module borders
+ * {@link http://www.w3.org/TR/css3-background/#borders Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Border Radius
+ *
+ * @example
+ * .border-radius(12px);
+ * .border-radius(3px 0 0 3px);
+ */
+/**
+ * Border Image
+ *
+ * @example
+ * .border-image(url("border.png") 27 round stretch);
+ */
+/**
+ * Border Image <Property>
+ *
+ * @example
+ * .border-image-source(url("border.png"));
+ * .border-image-slice(27);
+ * .border-image-repeat(round stretch);
+ */
+/**
+ * Box Shadow
+ *
+ * @example
+ * .box-shadow(1px 1px 5px fade(black, 10%));
+ * .box-shadow(inset 0 0 0 1px #cccccc, inset 0 1px 3px fade(black, 25%););
+ */
+/**
+ * Box
+ * @module box
+ * {@link http://www.w3.org/TR/css3-box/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Box Sizing
+ *
+ * @example
+ * .box-sizing(border-box);
+ */
+/**
+ * Clear Fix
+ * {@link http://stackoverflow.com/questions/211383/which-method-of-clearfix-is-best Stack Overflow}
+ *
+ * @example
+ * .clearfix();
+ */
+/**
+ * Inline Block Middle
+ *
+ * @example
+ * .inline-block-middle();
+ */
+/**
+ * Inline Block Top
+ *
+ * @example
+ * .inline-block-top();
+ */
+/**
+ * Color
+ * @module color
+ * {@link http://www.w3.org/TR/css3-color/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Gradients
+ * @module gradients
+ * {@link http://www.w3.org/TR/css3-images/#gradients Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Linear Gradient
+ * {@link https://css-tricks.com/css3-gradients/ CSS Tricks}
+ *
+ * @example
+ * .linear-gradient(@colors: red, #f06d06;);
+ * .linear-gradient(@angle: 45deg; @colors: red, #f06d06;);
+ * .linear-gradient(@angle: 90deg; @colors: red 0%, #f06d06 50%, rgb(255, 255, 0) 100%;);
+ * .linear-gradient(@angle: 100grad; @colors: #fffdc2, #fffdc2 15%, #d7f0a2 15%, #d7f0a2 85%, #fffdc2 85%;);
+ */
+/**
+ * <Direction> Gradient
+ *
+ * @example
+ * .vertical-gradient(red, #f06d06 50%, rgb(255, 255, 0););
+ */
+/**
+ * Radial Gradient
+ * {@link https://css-tricks.com/css3-gradients/ CSS Tricks}
+ *
+ * @example
+ * .radial-gradient(@colors: yellow, #f06d06;);
+ * .radial-gradient(@shape: circle; @size: 100px; @colors: yellow, #f06d06;);
+ * .radial-gradient(@shape: circle; @position: left; @colors: yellow, #f06d06;);
+ * .radial-gradient(@shape: circle; @position: right top; @colors: yellow, #f06d06;);
+ */
+/**
+ * <Shape> Gradient (position at center)
+ *
+ * @example
+ * .ellipse-gradient(yellow, #f06d06;);
+ */
+/**
+ * SVG Gradient
+ * {@link http://lesscss.org/functions/#misc-functions-svg-gradient LESS Function Reference}
+ *
+ * @example
+ * .svg-gradient(@direction: to bottom; @colors: #00f, #fff;);
+ */
+/**
+ * Grid
+ * @module grid
+ * {@link http://www.w3.org/TR/css-grid-1/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Grid
+ *
+ * @example
+ * .grid();
+ */
+/**
+ * Grid Row
+ *
+ * @example
+ * .grid-row(@count: 2, @gap: 40px);
+ */
+/**
+ * Grid Column
+ *
+ * @example
+ * .grid-column(@count: 3, @gap: 2%);
+ */
+/**
+ * Grid Column Width
+ *
+ * @example
+ * .grid-column-width(@count: 4, @gap: 20px, @span: 2);
+ */
+/**
+ * Images
+ * @module images
+ * {@link http://www.w3.org/TR/css3-images/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Image Fragments
+ *
+ * @example
+ * .image-fragments(home, cube, mail, profile, nav, search, map;);
+ */
+/**
+ * Sprite
+ * {@link https://css-tricks.com/css-sprites/ CSS Tricks}
+ *
+ * @example
+ * @file: "icons/context-menu.png";
+ * @actions: add, save, edit, remove, cancel;
+ * .sprite(@image: @file; @fragments: @actions; @size: 18px;);
+ * .sprite(@image: @file; @fragments: @actions; @size: 18px; @top: 18px; @after: ~":hover";);
+ */
+/**
+ * Shapes
+ * @module shapes
+ * {@link http://www.w3.org/TR/css-shapes-1/ Specification}
+ *
+ * This module requires the modules Borders and Transforms
+ * @requires borders
+ * @requires transforms
+ * =====================================================================================================================
+ */
+/**
+ * Arrow
+ * {@link https://css-tricks.com/snippets/css/css-triangle/ CSS Tricks}
+ *
+ * @example
+ * .arrow(@color: #db5252, @direction: bottom, @base: 12px, @height: 6px);
+ */
+/**
+ * Arrow <Direction>
+ *
+ * @example
+ * .arrow-up(@base: 100px, @height: 100px, @color: gray);
+ */
+/**
+ * Square
+ *
+ * @example
+ * .square(@size: 100px, @color: tomato);
+ */
+/**
+ * Rectangle
+ *
+ * @example
+ * .rectangle(@width: 150px, @height: 100px, @color: lightblue);
+ */
+/**
+ * Circle
+ *
+ * @example
+ * .circle(@size: 100px, @color: lightgreen);
+ */
+/**
+ * Oval
+ *
+ * @example
+ * .oval(@width: 150px, @height: 100px, @color: gold);
+ */
+/**
+ * Ring
+ *
+ * @example
+ * .ring(@size: 100px, @thickness: 20px, @color: chocolate);
+ */
+/**
+ * Triangle
+ *
+ * @example
+ * .triangle(@base: 100px, @height: 100px, @color: lightseagreen);
+ */
+/**
+ * Triangle <Direction>
+ *
+ * @example
+ * .triangle-down(@base: 100px, @height: 100px, @color: lightseagreen);
+ */
+/**
+ * Rhombus
+ *
+ * @example
+ * .rhombus(@width: 150px, @height: 100px, @color: lightpink);
+ */
+/**
+ * Cross
+ *
+ * @example
+ * .cross(@size: 100px, @thickness: 20px, @color: silver);
+ */
+/**
+ * Heart
+ * {@link https://en.wikipedia.org/wiki/Square Wikipedia}
+ *
+ * @example
+ * .heart(@width: auto, @height: 100px, @color: lightcoral);
+ */
+/**
+ * Star
+ * {@link https://en.wikipedia.org/wiki/Pentagon Wikipedia}
+ *
+ * @example
+ * .star(@width: auto, @height: 100px, @color: orange);
+ */
+/**
+ * Text
+ * @module text
+ * {@link http://www.w3.org/TR/css-text-3/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Break All
+ *
+ * @example
+ * .break-all();
+ */
+/**
+ * Break Word
+ *
+ * @example
+ * .break-word();
+ */
+/**
+ * Hyphens
+ *
+ * @example
+ * .hyphens(auto);
+ */
+/**
+ * Nowrap with Ellipsis
+ *
+ * @example
+ * .nowrap-ellipsis();
+ */
+/**
+ * Placeholder
+ * {@link https://css-tricks.com/snippets/css/style-placeholder-text/ CSS Tricks}
+ *
+ * @example
+ * .placeholder({ color: #cccccc; font-size: 12px; });
+ */
+/**
+ * Preformatted text Wrap
+ * {@link https://css-tricks.com/snippets/css/make-pre-text-wrap/ CSS Tricks}
+ *
+ * @example
+ * .pre-wrap();
+ */
+/**
+ * Text Rendering
+ * {@link https://css-tricks.com/almanac/properties/t/text-rendering/ CSS Tricks}
+ *
+ * @example
+ * .text-rendering();
+ */
+/**
+ * User Select
+ * {@link https://css-tricks.com/almanac/properties/u/user-select/ CSS Tricks}
+ *
+ * @example
+ * .user-select();
+ */
+/**
+ * Transforms
+ * @module transforms
+ * {@link http://www.w3.org/TR/css-transforms-1/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Transform
+ *
+ * @example
+ * .transform(translate(50px, 50px) scale(1.2) rotate(45deg));
+ */
+/**
+ * <Transform 2D Function>
+ *
+ * @example
+ * .translate(50px, 50px;);
+ * .scale(1.2);
+ * .rotate(45deg);
+ * .skew(20deg);
+ */
+/**
+ * Flip <Direction>
+ * {@link https://css-tricks.com/snippets/css/flip-an-image/ CSS Tricks}
+ *
+ * @example
+ * .flip-horizontal();
+ * .flip-vertical();
+ */
+/**
+ * Transform <Property>
+ *
+ * @example
+ * .transform-origin(left bottom);
+ * .transform-style(preserve-3d);
+ * .perspective(50px);
+ * .perspective-origin(0% 100%);
+ * .backface-visibility(hidden);
+ */
+/**
+ * Transitions
+ * @module transitions
+ * {@link http://www.w3.org/TR/css3-transitions/ Specification}
+ * =====================================================================================================================
+ */
+/**
+ * Transition
+ *
+ * @example
+ * .transition(background-color @transition);
+ * .transition(transform @transition, @transition-fade;);
+ */
+/**
+ * Transition <Property>
+ * {@link https://webref.ru/css/transition-timing-function Web Reference}
+ *
+ * @example
+ * .transition-delay(1s);
+ * .transition-duration(100ms);
+ * .transition-property(width, height;);
+ * .transition-timing-function(ease-in-out);
+ */
+/*
+
+
+
+
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%;
+}
+body {
+  padding-top: 90px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-bar {
+  border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  height: 90px;
+}
+.nav-bar .background-container {
+  background-color: #f4f1ea;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.nav-bar .nav-container {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-bar .nav-container .nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .nav-container .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-family: #454A59;
+  padding: 15px;
+}
+@media only screen and (min-width: 500px) {
+  .nav-bar .nav-container .nav-links a {
+    font-size: 1.6rem;
+    font-family: #454A59;
+    padding: 10px 30px;
+  }
+}
+.nav-bar .nav-container .nav-links a:hover {
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.home {
+  background-image: -webkit-radial-gradient(center, circle 600px, #81848E, white);
+  background-image: -moz-radial-gradient(center, circle 600px, #81848E, white);
+  background-image: -o-radial-gradient(center, circle 600px, #81848E, white);
+  background-image: radial-gradient(circle 600px at center, #81848E, white);
+  /* Unused section
+  .content-pick {
+    width: 100%;
+    padding-top: 30px;
+    border-top: 2px dashed @nav-border;
+    .flex(column, nowrap, space-between, center);
+
+    @media @tablet {
+      .flex(row, nowrap, space-around, center);
+      height: 350px;
+    }
+
+    .destination {
+      width: 80%;
+      margin-bottom: 30px;
+      .flex(column, nowrap, space-between, flex-start);
+      @media @tablet {
+        h4 {
+          font-size: 2.2rem;
+        }
+        width: 30%;
+        height: 100%;
+      }
+
+      @media @desktop {
+        h4 {
+          font-size: 2.5rem;
+        }
+        width: 30%;
+        height: 100%;
+      }
+
+      .btn {
+        .btn-style();
+        margin: 10px auto;
+        width: 100%;
+      }
+    }
+  }
+  */
+}
+.home img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .home img {
+    max-width: 100%;
+  }
+}
+.home .scroll-img {
+  width: 100%;
+  height: 200px;
+  background: url(../img/book-stack.jpeg) no-repeat center center fixed;
+}
+.home .link-anchor {
+  position: relative;
+  bottom: 90px;
+}
+.home .signup {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 500px) {
+  .home .signup {
+    width: 75%;
+  }
+}
+.home .signup .btn {
+  display: block;
+  background-color: #22283A;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: inherit;
+  height: 45px;
+  border: 2px solid #22283A;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  margin: 10px auto;
+  width: 100%;
+}
+.home .signup .btn:hover {
+  background-color: white;
+  color: #22283A;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+.home .header-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px dashed #F1F1F1;
+}
+.home .header-section .header-img {
+  max-width: 100%;
+}
+.home .header-section .header-content {
+  width: 100%;
+  padding: 5px;
+}
+.home .content-section {
+  margin: 30px 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.home .content-section .text-content {
+  width: 100%;
+  padding: 5px;
+}
+@media only screen and (min-width: 500px) {
+  .home .content-section .text-content {
+    width: 48%;
+    padding: 5px 1%;
+  }
+}
+.home .content-section .img-content {
+  width: 100%;
+  padding: 5px;
+}
+@media only screen and (min-width: 500px) {
+  .home .content-section .img-content {
+    width: 48%;
+    padding: 5px 1%;
+  }
+}
+.home .content-section .img-content img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .home .content-section .img-content img {
+    max-width: 100%;
+  }
+}
+.home .inverse-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.home .team-section {
+  margin: 30px 0px;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.home .team-section .text-content {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-section .text-content {
+    width: 48%;
+    padding: 5px 1%;
+  }
+}
+.home .team-section .img-content {
+  width: 100%;
+  padding: 5px;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-section .img-content {
+    width: 48%;
+    padding: 5px 1%;
+  }
+}
+.home .team-section .img-content img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-section .img-content img {
+    max-width: 100%;
+  }
+}
+.home .inverse-team {
+  margin: 30px 0px;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 500px) {
+  .home .inverse-team {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.home .team-small-row {
+  margin: 30px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home .team-small-row .team-profile {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .team-small-row .team-profile h2 {
+  font-size: 1.6rem;
+}
+.home .team-small-row .team-profile h4 {
+  font-size: 1.2rem;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-small-row .team-profile {
+    width: 18%;
+    padding: 5px 1%;
+  }
+}
+.home .team-small-row .team-profile img {
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-small-row .team-profile img {
+    max-width: 100%;
+  }
+}
+.home .team-big-row {
+  margin: 30px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home .team-big-row .team-profile {
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .team-big-row .team-profile h2 {
+  font-size: 2.4rem;
+}
+.home .team-big-row .team-profile h4 {
+  font-size: 1.8rem;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-big-row .team-profile {
+    width: 31%;
+    padding: 5px 1%;
+  }
+}
+.home .team-big-row .team-profile img {
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  width: 100%;
+}
+@media only screen and (min-width: 500px) {
+  .home .team-big-row .team-profile img {
+    max-width: 100%;
+  }
+}
+.footer {
+  width: 100%;
+  background: #f9f7f4;
+  border-top: 2px dashed #F1F1F1;
+}
+.footer p {
+  text-align: center;
+  color: #5E6164;
+  font-size: 1.6rem;
+  padding: 20px;
+}
